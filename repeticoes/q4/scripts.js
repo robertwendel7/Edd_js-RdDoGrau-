@@ -7,7 +7,7 @@ function vogais(){
         }
     }
 
-    console.log(contar);
+    alert("Existem " + contar + " vogais nesse texto");
     
 
 

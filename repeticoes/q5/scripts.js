@@ -5,5 +5,5 @@ function imprimirContrario(){
         palavra += p[i];
     }
 
-    console.log(palavra);
+    alert( p + " ao copalavra fica: " + palavra);
 }

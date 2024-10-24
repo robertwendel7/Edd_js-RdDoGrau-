@@ -1,0 +1,16 @@
+.texto{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.todo{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    width: 500px;
+}
+
+label{
+   
+    color: red;
+}

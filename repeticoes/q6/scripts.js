@@ -13,15 +13,15 @@ function adivinharNumero(){
         
         if (numero == aleatorio){
 
-            console.log("Exato!")
+            alert("Exato!")
             acertou = true;
             
         }
         else if(numero > aleatorio){
-            console.log("palpite muito alto...")
+            alert("palpite muito alto...")
         }
         else{
-            console.log("palpite mutio baixo...")
+            alert("palpite mutio baixo...")
         }
         
         break;

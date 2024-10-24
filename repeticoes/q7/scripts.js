@@ -4,8 +4,9 @@ function gerarNumeroAleatorio(min, max){
 
 let palavras = ["aguia", "bruxa", "cacto", "denso", "festa", "ganso", "hiena", "india", "jantar", "tempo"]
 console.log(palavras)
-const aleatorio = parseInt(gerarNumeroAleatorio(0, palavras.length));
-let tentativas = 0
+// const aleatorio = parseInt(gerarNumeroAleatorio(0, palavras.length));
+const aleatorio = parseInt(gerarNumeroAleatorio(0, 5));
+let tentativas = 1
 
 function adivinharPalavra(){
     let p = document.getElementById('palavra').value;
@@ -15,13 +16,13 @@ function adivinharPalavra(){
 
     while(!acertou){
         if(p != palavras[aleatorio]){
-            console.log("Tente novamente...");
+            alert("Tente novamente...");
             tentativas +=1;
             
         } 
         else{
-            console.log("Exato!");
-            console.log("Você acertou com " + tentativas + " tentativas!");
+            alert("Exato!");
+            alert("Você acertou com " + tentativas + " tentativas!");
 
             acertou = true;
         }
