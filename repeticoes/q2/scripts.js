@@ -11,7 +11,9 @@ function mostrarPares(){
 
     }
 
-    alert(list);
+    document.querySelector('#resultado').innerHTML = "Resultado: " + list;
+
+    // alert(list);
 
 
 }
