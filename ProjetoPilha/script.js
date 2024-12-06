@@ -4,14 +4,29 @@ function mostrarPilha(){
     document.querySelector('#resultado').innerHTML = "Resultado da pilha: " + pilha;
 }
 function mostrarTamanhoPilha(valor){
-    document.querySelector('#resultadoSP').innerHTML = "Tamanho da pilha: " + valor;
+    document.querySelector('#resultadoSize').innerHTML = "Tamanho da pilha: " + valor;
+}
+function mostrarTopoPilha(valor){
+    document.querySelector('#resultadoPeek').innerHTML = "Topo da pilha: " + valor;
+}
+function mostrarIsEmpty(valor){
+    let valorFuncao = valor;
+
+    if(valorFuncao === true){
+        document.querySelector('#resultadoIsEmpty').innerHTML = "A pilha está vazia ";
+    } else {
+        document.querySelector('#resultadoIsEmpty').innerHTML = "A pilha não está vazia ";
+    }
+
 }
 
 function clickPush(){
-    valor = document.getElementById("input").value;
-    push(valor);
-    console.log(pilha);
-    mostrarPilha()
+    let valor = document.getElementById("input").value;
+    if(valor){
+        push(valor);
+        mostrarPilha()
+        console.log(pilha);
+    }
 
 }
 function clickPop(){
@@ -24,13 +39,14 @@ function clickPeek(){
     
     peek();
     mostrarPilha()
+    mostrarTopoPilha(peek());
     
 }
 function clickIsEmpty(){
    
     isEmpty();
     mostrarPilha()
-
+    mostrarIsEmpty(isEmpty());
     
 }
 function clickSize(){
