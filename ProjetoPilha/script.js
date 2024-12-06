@@ -3,9 +3,10 @@ pilha = []
 function mostrarPilha(){
     document.querySelector('#resultado').innerHTML = "Resultado da pilha: " + pilha;
 }
-function mostrarTamanho(){
-    
+function mostrarTamanhoPilha(valor){
+    document.querySelector('#resultadoSP').innerHTML = "Tamanho da pilha: " + valor;
 }
+
 function clickPush(){
     valor = document.getElementById("input").value;
     push(valor);
@@ -34,8 +35,9 @@ function clickIsEmpty(){
 }
 function clickSize(){
     
-    size();
-    mostrarPilha()
+    
+    mostrarTamanhoPilha(size());
+    console.log(size());
     
 }
 
@@ -65,5 +67,3 @@ function size(){
 
 }
 
-
-document.querySelector
