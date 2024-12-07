@@ -39,13 +39,13 @@ p{
     flex-direction: column;
     background-color: rgb(241, 241, 241);
     width: 500px;
-    height: 250px;
+    height: 300px;
     border-radius: 5px;
     box-shadow: 0px 5px 10px rgb(146, 146, 146);
 }
 
 input{
-    background-color: rgb(255, 255, 255);
+    background-color: darkgray;
     border: 0px;
     width: 90%;
     height: 60px;
