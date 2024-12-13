@@ -2,6 +2,8 @@ pilha = []
 
 function mostrarPilha(){
     document.querySelector('#resultado').innerHTML = "Resultado da pilha: " + pilha;
+
+    
 }
 function mostrarTamanhoPilha(valor){
     document.querySelector('#resultadoSize').innerHTML = "Tamanho da pilha: " + valor;
